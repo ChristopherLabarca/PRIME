@@ -1,0 +1,123 @@
+body {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(https://media.istockphoto.com/id/1457433817/es/foto/grupo-de-alimentos-saludables-para-la-dieta-flexitariana.jpg?s=1024x1024&w=is&k=20&c=ydtVD_OJN06OXvPRkr_vNGPTgRCGFd9Qs7mQQXYQh-w=);
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+  font-family:  Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+
+  border: 20px solid rgb(53, 141, 53);
+  margin: 20;
+  padding: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+
+}
+
+/*abreviacion background: url (imagen) no-repeat center center fixed;
+el background-size: cover; si o si debo colocarlo
+/* p {
+  color: #333;
+  font-size: 25px;
+}
+div p {
+  font-size: 30px;
+  color: red;
+}
+*/
+/* en html >> id="midiv" */
+/*#midiv p {
+  color: blue !important;
+}
+
+div .auxiliar a {
+  color: green;
+}
+
+div a {
+  color: pink;
+} */
+
+/* Especificidad: 0,0,0,1 - NO se aplica */
+p {
+  color: rgb(228, 228, 238);
+  font-size: 30px;
+}
+
+
+.contenedor {
+  display: flex; /* Habilita flexbox */
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.imagen {
+  margin-right: 5px; /* Espacio entre la imagen y el texto */
+}
+
+/* Especificidad: 0,0,1,0 - NO se aplica */
+.destacado {
+  color: red;
+}
+div p {
+  font-size: 30px;
+  color: rgb(250, 247, 247);
+}
+li{font-size: 20px;
+  color: azure;
+  display: flex;
+
+}
+h1{font-size: 25px;
+  color: azure;}
+
+h2{font-size: 20px;
+  color: azure;}
+
+footer{color: rgb(230, 10, 10);}
+
+
+/* Especificidad: 0,1,0,0 - SÍ se aplica (mayor especificidad) */
+#parrafo-especial {
+  color: green;
+}
+
+/* Especificidad: 0,1,1,0 - SÍ se aplica (mayor especificidad) */
+#parrafo-especial.destacado {
+  color: purple;
+}
+
+.container {
+  width: 100%;
+  height: 500px;
+}
+
+.container section {
+  width: 30%;
+  height: 100px;
+  padding: 20px;
+  /* background-color: blueviolet; */
+  border: 1px solid rgb(198, 187, 35);
+  /*applicar un gradiente de rojo a azul en el background*/
+  background: linear-gradient(
+    337deg,
+    rgb(4, 35, 17) 81%,
+    rgba(237, 221, 83, 1) 100%
+  );
+}
+
+.container section.a {
+  background: aquamarine;
+}
+.container section.b {
+  background: aqua;
+}
+.container section.c {
+  background: lightgoldenrodyellow;
+}
